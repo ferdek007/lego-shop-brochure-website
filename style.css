@@ -18,7 +18,6 @@ header {
     left: 0;
     width: 100%;
     padding: 1.3rem 10%;
-    /* background-color: #FFD500; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -63,8 +62,13 @@ nav a {
     font-size: 1.15rem;
     color: #000;
     text-decoration: none;
+    text-transform: uppercase;
     font-weight: 500;
     margin-left: 2.5rem;
+}
+
+nav a:hover {
+    color: #FFF;
 }
 
 #check-menu {
@@ -81,13 +85,20 @@ nav a {
 }
 
 /* BREAKPOINTS */
-@media (max-width: 992px) {
+@media (max-width: 1002px) {
     header {
         padding: 1.3rem 5%;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 892px) {
+    nav a {
+        margin-left: 2rem;    
+    }
+}
+
+
+@media (max-width: 837px) {
     .icons {
         display: inline-flex;
     }
@@ -128,6 +139,10 @@ nav a {
         transform: translateY(-50px);
         opacity: 0;
         transition: 0.3s ease;
+    }
+
+    nav a:hover {
+        transition: none;
     }
 
     #check-menu:checked~nav a {
