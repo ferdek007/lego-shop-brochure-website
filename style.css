@@ -20,7 +20,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 100;
+  z-index: 1001;
   background-color: #ffd500;
 }
 
@@ -100,6 +100,80 @@ nav ul li a {
   color: #fff;
 }
 
+main {
+  margin-top: 140px;
+}
+
+#about {
+  display: flex;
+  flex-wrap: wrap;
+  /* gap: 30px; */
+  padding: 0px 30px;
+  margin-bottom: 70px;
+}
+
+#info-text {
+  flex: 1;
+  min-width: 300px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+#info-text h2 {
+  color: #e60023;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+#info-text h3 {
+  margin-bottom: 8px;
+}
+
+#info-text p {
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+#info-text a {
+  color: #000;
+}
+
+#info-text ul {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+#info-text li {
+  margin-bottom: 8px;
+}
+
+/* MAP */
+#map-container {
+  flex: 1;
+  min-width: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  /* height: 450px; */
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+}
+
+footer {
+  background-color: rgb(32, 29, 72);
+  color: #fff;
+  text-align: center;
+}
+
+footer a {
+  color: #fff;
+}
+
 /* BREAKPOINTS */
 @media (max-width: 800px) {
   nav {
@@ -131,6 +205,24 @@ nav ul li a {
     text-align: center;
     border-top: 1px solid #fff;
     float: none;
+  }
+
+  #about {
+    padding: 0 15px;
+  }
+
+  #info-text,
+  #map-container {
+    flex: 100%;
+  }
+
+  #map-container {
+    order: 2;
+    height: 400px;
+  }
+
+  #info-text {
+    order: 1;
   }
 }
 
