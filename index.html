@@ -7,27 +7,43 @@
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
     />
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <script defer src="script.js"></script>
   </head>
   <body>
     <header>
-      <a href="#" class="logo">KOSTROP</a>
-
-      <input type="checkbox" id="check-menu" />
-      <label for="check-menu" class="icons">
-        <i class="fa-solid fa-bars" id="menu-icon"></i>
-        <i class="fa-solid fa-xmark" id="close-icon"></i>
-      </label>
-
       <nav>
-        <a href="#" style="--i: 0">O nas</a>
-        <a href="#" style="--i: 1">Oferta</a>
-        <a href="#" style="--i: 2">Nowości</a>
-        <a href="#" style="--i: 3">Skup klocków</a>
-        <a href="#" style="--i: 4">Kontakt</a>
-        <a href="#" style="--i: 5">FAQ</a>
+        <a id="toggle-nav" href="#"
+          ><i class="fa-solid fa-bars" id="menu-icon"></i
+        ></a>
+        <ul>
+          <li><a class="logo" href="#">KOSTROP</a></li>
+          <li><a class="nav-item" href="#">O nas</a></li>
+          <li>
+            <a
+              class="nav-item"
+              href="https://allegro.pl/uzytkownik/KOSTROP?dd_referrer=https%3A%2F%2Fwww.google.com%2F"
+              >Oferta</a
+            >
+          </li>
+          <li><a class="nav-item" href="#">Nowości</a></li>
+          <li><a class="nav-item" href="#">Skup klocków</a></li>
+          <li><a class="nav-item" href="#">Kontakt</a></li>
+          <li><a class="nav-item" href="#">FAQ</a></li>
+        </ul>
+        <div id="social-media">
+          <a href="https://www.facebook.com/nebbjginvgnbugcffnjvvt"
+            ><i class="fa-brands fa-facebook-f"></i
+          ></a>
+          <a href="https://www.instagram.com/kostrop.pl"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="https://www.tiktok.com/@skleplegoursus"
+            ><i class="fa-brands fa-tiktok"></i
+          ></a>
+        </div>
       </nav>
     </header>
     <main></main>
