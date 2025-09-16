@@ -134,6 +134,7 @@ main {
 #info-text p {
   margin-bottom: 15px;
   font-size: 16px;
+  line-height: 1.5rem;
 }
 
 #info-text a {
@@ -167,11 +168,31 @@ main {
 footer {
   background-color: rgb(32, 29, 72);
   color: #fff;
-  text-align: center;
+  text-align: left;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 30px;
+  font-size: 16px;
+  line-height: 1.5rem;
+}
+
+footer #social-media {
+  margin: 0;
+  float: none;
 }
 
 footer a {
   color: #fff;
+}
+
+#banner .logo {
+  cursor: default;
+}
+
+#copyright-info {
+  text-align: right;
 }
 
 /* BREAKPOINTS */
@@ -223,6 +244,10 @@ footer a {
 
   #info-text {
     order: 1;
+  }
+
+  footer {
+    justify-content: left;
   }
 }
 
