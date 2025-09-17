@@ -71,8 +71,13 @@ nav ul li a {
   color: #fff;
 }
 
-.nav-item.active {
-  background-color: orange;
+#shop-nav {
+  background-color: #ff5a00;
+  color: #fff;
+}
+
+#shop-nav:hover {
+  background-color: #d34f07;
 }
 
 #toggle-nav {
@@ -203,7 +208,11 @@ main {
 }
 
 #contact-info p {
-  margin: 10px;
+  margin-bottom: 10px;
+}
+
+#contact-info h4 {
+  margin-bottom: 10px;
 }
 
 #contact-info {

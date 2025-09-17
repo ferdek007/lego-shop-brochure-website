@@ -31,4 +31,8 @@ const redBrickIcon = new L.Icon({
 
 const popupMarker = L.marker(SHOP_LOCATION, { icon: redBrickIcon }).addTo(map);
 
-popupMarker.bindPopup("Nasz sklep<br>ul. Kolorowa 8, Warszawa").openPopup();
+popupMarker
+  .bindPopup(
+    `<a href="https://www.google.com/maps/place/SKLEP+Z+KLOCKAMI+LEGO/@52.1905181,20.8912748,17z/data=!3m1!5s0x471934e9aca246a3:0xae6264b4b4151766!4m10!1m2!2m1!1skostrop!3m6!1s0x471935dbcfc3b175:0x49bdca88f38219d8!8m2!3d52.1905148!4d20.8938497!15sCgdrb3N0cm9wkgEJdG95X3N0b3Jl4AEA!16s%2Fg%2F11nnzb1rl2?entry=ttu&g_ep=EgoyMDI1MDkxNS4wIKXMDSoASAFQAw%3D%3D"><i class="fa-solid fa-location-dot"></i>&nbsp;Nasz sklep</a><br>ul. Kolorowa 8, Warszawa`
+  )
+  .openPopup();
