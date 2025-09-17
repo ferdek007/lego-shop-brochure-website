@@ -37,9 +37,9 @@
             >
           </li>
           <li><a class="nav-item" href="#">Nowości</a></li>
-          <li><a class="nav-item" href="#">Skup klocków</a></li>
+          <li><a class="nav-item" href="#buyback">Skup klocków</a></li>
           <li><a class="nav-item" href="#footer">Kontakt</a></li>
-          <li><a class="nav-item" href="#">FAQ</a></li>
+          <li><a class="nav-item" href="#FAQ">FAQ</a></li>
         </ul>
         <div id="social-media">
           <a href="https://www.facebook.com/nebbjginvgnbugcffnjvvt"
@@ -68,18 +68,26 @@
           </div>
 
           <h3>Nasze usługi:</h3>
-          <ul>
-            <li>Sprzedajemy nowe zestawy LEGO<sup>®</sup></li>
-            <li>
+          <div id="services">
+            <p>
+              <i class="fa-solid fa-cart-shopping"></i>
+              Sprzedajemy nowe zestawy LEGO<sup>®</sup>
+            </p>
+            <p>
+              <i class="fa-solid fa-cubes-stacked"></i>
               Sprzedajemy elementy LEGO<sup>®</sup> na sztuki (ponad 10 000
               różnych klocków!)
-            </li>
-            <li>
+            </p>
+            <p>
+              <i class="fa-solid fa-sack-dollar"></i>
               Skupujemy klocki LEGO<sup>®</sup> na kilogramy
               (50&nbsp;zł&nbsp;/&nbsp;kg)
-            </li>
-            <li>Prowadzimy punkt nadawczy (InPost, Orlen Paczka, UPS)</li>
-          </ul>
+            </p>
+            <p>
+              <i class="fa-solid fa-box-open"></i>
+              Prowadzimy punkt nadawczy (InPost, Orlen Paczka, UPS)
+            </p>
+          </div>
           <div id="courier-logos">
             <img src="imgs/inpost-logo.png" alt="inpost-logo" />
             <img src="imgs/orlen-paczka-logo.png" alt="orlen-paczka-logo" />
@@ -87,14 +95,22 @@
           </div>
 
           <h3>Nasza lokalizacja:</h3>
-          <p>
-            ul. Kolorowa 8<br />
-            02-495 Warszawa, Ursus<br />
-            tel. 509 688 166<br />
-            <a href="mailto:kostrop@wp.pl">kostrop@wp.pl</a>
-          </p>
+          <div id="contact-info">
+            <p>
+              <i class="fa-solid fa-location-dot"></i>ul. Kolorowa 8<br />
+              <span id="postal-code">02-495 Warszawa, Ursus</span>
+            </p>
+            <p>
+              <i class="fa-solid fa-phone"></i
+              ><a class="phone" href="tel:509688166">509 688 166</a>
+            </p>
+            <p>
+              <i class="fa-solid fa-envelope"></i
+              ><a href="mailto:kostrop@wp.pl">kostrop@wp.pl</a>
+            </p>
+          </div>
 
-          <h3>Godziny otwarcia:</h3>
+          <h3><i class="fa-solid fa-clock"></i>Godziny otwarcia:</h3>
           <p>
             Poniedziałek – Piątek: <b>10:00 – 18:00</b><br />
             Sobota – Niedziela: Zamknięte
@@ -115,8 +131,30 @@
           <div id="map"></div>
         </div>
       </section>
-      <section id="buyback-price-list"></section>
-      <section id="FAQ"></section>
+      <section id="buyback">
+        <div id="buyback-info">
+          <h2>
+            <i class="fa-solid fa-sack-dollar"></i>Skup Klocków LEGO<sup>®</sup>
+          </h2>
+          <h3>Cena za 1 kg – 50 zł</h3>
+          <h3><i class="fa-solid fa-scale-balanced"></i>Ważymy na miejscu!</h3>
+          <p>Proszę dzwonić w celu umówienia:</p>
+          <p>
+            <i class="fa-solid fa-phone"></i
+            ><a class="phone" href="tel:509688166">509 688 166</a>
+          </p>
+        </div>
+      </section>
+      <section id="FAQ">
+        <div id="FAQ-answers">
+          <h2>
+            <i class="fa-solid fa-circle-question"></i>FAQ (Często zadawane
+            pytania)
+          </h2>
+          <h3>Czy skupujecie inne klocki niż LEGO<sup>®</sup>?</h3>
+          <p>– Nie, tylko oryginalne klocki LEGO<sup>®</sup>.</p>
+        </div>
+      </section>
     </main>
     <footer id="footer">
       <div>
@@ -127,10 +165,16 @@
       <div id="contact-info">
         <h4>KOSTROP</h4>
         <p>
-          ul. Kolorowa 8<br />
-          02-495 Warszawa, Ursus<br />
-          tel. 509 688 166<br />
-          <a href="mailto:kostrop@wp.pl">kostrop@wp.pl</a>
+          <i class="fa-solid fa-location-dot"></i>ul. Kolorowa 8<br />
+          <span id="postal-code">02-495 Warszawa, Ursus</span>
+        </p>
+        <p>
+          <i class="fa-solid fa-phone"></i
+          ><a class="phone" href="tel:509688166">509 688 166</a>
+        </p>
+        <p>
+          <i class="fa-solid fa-envelope"></i
+          ><a href="mailto:kostrop@wp.pl">kostrop@wp.pl</a>
         </p>
       </div>
       <div id="opening-hours">
