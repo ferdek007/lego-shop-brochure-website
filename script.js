@@ -1,7 +1,11 @@
 $(document).ready(() => {
   $("#toggle-nav").click(() => {
     $("#toggle-nav i").toggleClass("fa-xmark fa-bars");
-    $("nav ul li").slideToggle("slow");
+    $("nav ul li").slideToggle();
+  });
+  $(".nav-item").click(() => {
+    $("#toggle-nav i").toggleClass("fa-xmark fa-bars");
+    $("nav ul li").slideToggle();
   });
 });
 

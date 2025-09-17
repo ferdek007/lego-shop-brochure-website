@@ -74,6 +74,7 @@ nav ul li a {
 #shop-nav {
   background-color: #ff5a00;
   color: #fff;
+  border-radius: 15px;
 }
 
 #shop-nav:hover {
@@ -167,7 +168,7 @@ main {
   color: #fff;
   display: inline-block;
   padding: 15px 20px;
-  border-radius: 5px;
+  border-radius: 15px;
   font-size: 18px;
   transition: background-color 0.3s ease;
 }
