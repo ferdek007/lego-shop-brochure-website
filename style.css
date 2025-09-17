@@ -30,6 +30,14 @@ header {
   text-decoration: none;
   font-weight: 700;
   font-style: italic;
+  display: flex;
+  align-items: center;
+  ju: center;
+}
+
+.logo img {
+  height: 50px;
+  margin-right: 5px;
 }
 
 nav {
@@ -71,6 +79,7 @@ nav ul li a {
   color: #fff;
   text-decoration: none;
   display: none;
+  cursor: pointer;
 }
 
 #social-media {
@@ -132,7 +141,7 @@ main {
 }
 
 #info-text p {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   font-size: 16px;
   line-height: 1.5rem;
 }
@@ -148,6 +157,51 @@ main {
 
 #info-text li {
   margin-bottom: 8px;
+}
+
+#info-text .shop-link {
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: #ff5a00;
+  color: #fff;
+  display: inline-block;
+  padding: 15px 20px;
+  border-radius: 5px;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+#info-text .shop-link:hover {
+  background-color: #d34f07;
+}
+
+#info-text .logo {
+  justify-content: left;
+}
+
+#lego-logo {
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+#banner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0px 30px;
+}
+
+#courier-logos {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+#courier-logos img {
+  height: 100px;
 }
 
 /* MAP */
@@ -187,7 +241,8 @@ footer a {
   color: #fff;
 }
 
-#banner .logo {
+footer,
+#about .logo {
   cursor: default;
 }
 
@@ -196,7 +251,7 @@ footer a {
 }
 
 /* BREAKPOINTS */
-@media (max-width: 800px) {
+@media (max-width: 810px) {
   nav {
     overflow: hidden;
   }
@@ -209,6 +264,10 @@ footer a {
     background-color: #6666ff;
     width: 100%;
     display: block;
+  }
+
+  .logo {
+    justify-content: center;
   }
 
   nav ul li a {
@@ -230,6 +289,23 @@ footer a {
 
   #about {
     padding: 0 15px;
+  }
+
+  #banner {
+    justify-content: center;
+    /* text-align: center; */
+  }
+
+  #lego-logo {
+    height: 80px;
+  }
+
+  #courier-logos {
+    justify-content: center;
+  }
+
+  #courier-logos img {
+    height: 60px;
   }
 
   #info-text,

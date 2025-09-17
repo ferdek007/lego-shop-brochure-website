@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>KOSTROP – Sklep z LEGO</title>
+    <title>KOSTROP – Sklep z LEGO®</title>
     <link rel="icon" href="imgs/red-brick.png" />
     <link rel="stylesheet" href="style.css" />
     <link
@@ -21,12 +21,14 @@
   <body>
     <header>
       <nav>
-        <a id="toggle-nav" href="#"
-          ><i class="fa-solid fa-bars" id="menu-icon"></i
-        ></a>
+        <p id="toggle-nav"><i class="fa-solid fa-bars" id="menu-icon"></i></p>
         <ul>
-          <li><a class="logo" href="#">KOSTROP</a></li>
-          <li><a class="nav-item" href="#">O nas</a></li>
+          <li>
+            <a class="logo" href="#"
+              ><img src="imgs/red-brick.png" alt="red-brick-logo" />KOSTROP</a
+            >
+          </li>
+          <li><a class="nav-item" href="#about">O nas</a></li>
           <li>
             <a
               class="nav-item"
@@ -36,7 +38,7 @@
           </li>
           <li><a class="nav-item" href="#">Nowości</a></li>
           <li><a class="nav-item" href="#">Skup klocków</a></li>
-          <li><a class="nav-item" href="#">Kontakt</a></li>
+          <li><a class="nav-item" href="#footer">Kontakt</a></li>
           <li><a class="nav-item" href="#">FAQ</a></li>
         </ul>
         <div id="social-media">
@@ -55,20 +57,34 @@
     <main>
       <section id="about">
         <div id="info-text">
-          <h2><i>KOSTROP</i> – Sklep z&nbsp;klockami LEGO® w&nbsp;Ursusie</h2>
+          <div id="banner">
+            <div>
+              <span class="logo" href="#">
+                <img src="imgs/red-brick.png" alt="red-brick-logo" />KOSTROP
+              </span>
+              <h2>Sklep z&nbsp;klockami LEGO<sup>®</sup> w&nbsp;Ursusie</h2>
+            </div>
+            <img id="lego-logo" src="imgs/lego-logo.png" alt="lego-logo" />
+          </div>
 
           <h3>Nasze usługi:</h3>
           <ul>
-            <li>Sprzedajemy nowe zestawy LEGO®</li>
+            <li>Sprzedajemy nowe zestawy LEGO<sup>®</sup></li>
             <li>
-              Sprzedajemy elementy LEGO® na sztuki (ponad 10 000 różnych
-              klocków!)
+              Sprzedajemy elementy LEGO<sup>®</sup> na sztuki (ponad 10 000
+              różnych klocków!)
             </li>
             <li>
-              Skupujemy klocki LEGO® na kilogramy (50&nbsp;zł&nbsp;/&nbsp;kg)
+              Skupujemy klocki LEGO<sup>®</sup> na kilogramy
+              (50&nbsp;zł&nbsp;/&nbsp;kg)
             </li>
             <li>Prowadzimy punkt nadawczy (InPost, Orlen Paczka, UPS)</li>
           </ul>
+          <div id="courier-logos">
+            <img src="imgs/inpost-logo.png" alt="inpost-logo" />
+            <img src="imgs/orlen-paczka-logo.png" alt="orlen-paczka-logo" />
+            <img src="imgs/ups-logo.png" alt="ups-logo" />
+          </div>
 
           <h3>Nasza lokalizacja:</h3>
           <p>
@@ -88,6 +104,12 @@
             Zapraszamy do odwiedzenia naszego sklepu stacjonarnego lub online na
             Allegro!
           </p>
+
+          <a
+            class="shop-link"
+            href="https://allegro.pl/uzytkownik/KOSTROP?dd_referrer=https%3A%2F%2Fwww.google.com%2F"
+            >Nasza oferta Allegro</a
+          >
         </div>
         <div id="map-container">
           <div id="map"></div>
@@ -96,9 +118,11 @@
       <section id="buyback-price-list"></section>
       <section id="FAQ"></section>
     </main>
-    <footer>
-      <div id="banner">
-        <p class="logo">KOSTROP</p>
+    <footer id="footer">
+      <div>
+        <span class="logo" href="#">
+          <img src="imgs/red-brick.png" alt="red-brick-logo" />KOSTROP
+        </span>
       </div>
       <div id="contact-info">
         <h4>KOSTROP</h4>
